@@ -1,0 +1,57 @@
+.breadcumb-area {
+    background: url('../Assets//bnr.jpg') no-repeat top/cover;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.breadcumb-area:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .8;
+}
+
+.breadcumb-wrap h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: #fff;
+    position: relative;
+    margin-top: 0;
+    line-height: 35px;
+}
+
+.breadcumb-wrap ul li {
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+    position: relative;
+}
+
+.breadcumb-wrap ul li a {
+    color: #fff;
+    font-size: 18px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    position: relative;
+}
+
+.breadcumb-wrap ul li:after {
+    content: "/";
+    position: relative;
+    left: 7px;
+}
+
+/* Style the separator for the first breadcrumb list item differently */
+.breadcumb-wrap ul li:last-child:after {
+    content: "";
+    /* Add your custom styles here for the first separator */
+}

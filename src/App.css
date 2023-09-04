@@ -1,0 +1,10 @@
+.section-title h1:before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background: #d0a15e;
+    border-radius: 20px;
+}
